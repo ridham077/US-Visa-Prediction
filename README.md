@@ -50,3 +50,9 @@ The goal of this project is to demonstrate end-to-end ML deployment using FastAP
 ```bash
 git clone https://github.com/your-username/visa-predictor.git
 cd visa-predictor
+python -m venv myenv
+source myenv/bin/activate   # For Linux/Mac
+myenv\Scripts\activate      # For Windows
+pip install -r requirements.txt
+uvicorn app:app --reload
+streamlit run app.py
